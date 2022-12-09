@@ -1,6 +1,7 @@
 # Original creator: virejdasani
 
 import os
+import threading
 
 count = int(input("How many times do you want to commit? "))
 auto_push = input("Auto git push when commited? (y/n) ")
@@ -12,3 +13,6 @@ print(f"Committed {count} times")
 
 if auto_push == "y":
 	os.system('git push')
+
+def commit():
+	os.system(f'git commit --allow-empty -m "Commit {i} of {count}"')
