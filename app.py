@@ -1,7 +1,6 @@
 # Original creator: virejdasani
 
 import os
-import threading
 
 count = int(input("How many times do you want to commit? "))
 auto_push = input("Auto git push when commited? (y/n) ")
